@@ -1,0 +1,298 @@
+rate_class,error,traceback
+CIEP,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GPC,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GPI,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GSC,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GSI,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GSTC,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GSTI,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GTC,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+GTI,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+Res,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
+RSCP,Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.,"Traceback (most recent call last):
+  File ""D:\constellation\baseline_models.py"", line 110, in run_baseline
+    feat = make_features(df)
+  File ""D:\constellation\baseline_models.py"", line 33, in make_features
+    df[""is_holiday""] = df[""timestamp""].dt.date.astype(""datetime64"").isin(us_holidays).astype(int)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py"", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 430, in astype
+    return self.apply(
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\managers.py"", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\blocks.py"", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\dtypes\astype.py"", line 110, in _astype_nansafe
+    dta = DatetimeArray._from_sequence(arr, dtype=dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 327, in _from_sequence
+    return cls._from_sequence_not_strict(scalars, dtype=dtype, copy=copy)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 354, in _from_sequence_not_strict
+    dtype = _validate_dt64_dtype(dtype)
+  File ""C:\Users\PRIYNKA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\arrays\datetimes.py"", line 2544, in _validate_dt64_dtype
+    raise ValueError(msg)
+ValueError: Passing in 'datetime64' dtype with no precision is not allowed. Please pass in 'datetime64[ns]' instead.
+"
